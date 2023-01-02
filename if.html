@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>srinu</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+
+		var eng=parseInt(prompt("Enter Your English Marks"));
+		var tel=parseInt(prompt("Enter Your Telugu Marks"));
+		var hin=parseInt(prompt("Enter Your Hindhi Marks"));
+		var chi=parseInt(prompt("Enter Your chemistry Marks"));
+		var mats=parseInt(prompt("Enter Yoyr Maths Marks"));
+		var phy=parseInt(prompt("Enter Yoyr Physics Marks"));
+		var t = eng+tel+hin+chi+mats+phy;
+		var avg = parseInt(t/6); 
+
+
+
+		document.write("English ="+eng+"<br/>");
+		document.write("Telugu ="+tel+"<br/>");
+		document.write("Hindhi ="+hin+"<br/>");
+		document.write("Chemistry ="+chi+"<br/>");
+		document.write("Maths ="+mats+"<br/>");
+		document.write("Physics ="+phy+"<br/>");
+		document.write("Total Marks="+t+"<br/>");
+		document.write("Avarage="+avg+"<br/>");
+		if (eng>=36 && tel>=36 && hin>=36 && chi>=36 && mats>=36 && phy>=36) {
+			document.write("Passed<br/>");
+			if (avg<99 && avg>75) {
+				document.write("Your Grade :A<br/>");	
+
+			}
+			else if (avg<75 && avg>50){
+				document.write("Your Grade :C<br/>");
+			}
+			
+			else{
+				document.write("Your Grade :C<br/>");
+			}
+			
+			
+
+
+			}
+			
+
+
+		
+		else{
+			document.write("Failed");
+		}
+
+		
+		
+	
+	
+	</script>
+
+</body>
+</html>
